@@ -1,3 +1,4 @@
+import Banner from "../components/Banner/Banner";
 import Navbar from "../components/navbar/Navbar";
 import SearchBar from "../components/searchbar/SearchBar";
 import Stories from "../components/Stories/Stories";
@@ -8,6 +9,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Navbar></Navbar>
       <SearchBar></SearchBar>
+      <Banner></Banner>
       <Stories></Stories>
       <Component {...pageProps} />
     </>

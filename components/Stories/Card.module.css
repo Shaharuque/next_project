@@ -45,7 +45,7 @@
     border-radius: 7px;
     border: none;
     color: white;
-    padding: 14px 85px;
+    padding: 14px 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -61,7 +61,7 @@
     border-radius: 7px;
     border: 1px solid #01AEAB;
     color: #01AEAB;
-    padding: 14px 85px;
+    padding: 14px 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

@@ -10,7 +10,7 @@ const MENU_LIST = [
   { text: "Trending Companies", href: "/contact" },
   { text: "Crypto Curriencies Companies", href: "/contact" },
   { text: "Contact", href: "/contact" },
-  { text: "Contact", href: "/contact" },
+  { text: "Home", href: "/contact" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
