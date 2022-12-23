@@ -8,9 +8,9 @@ const MENU_LIST = [
   { text: "Articles", href: "/" },
   { text: "News", href: "/about" },
   { text: "Trending Companies", href: "/contact" },
-  // { text: "Crypto Curriencies Companies", href: "/contact" },
-  // { text: "Contact", href: "/contact" },
-  // { text: "Contact", href: "/contact" },
+  { text: "Crypto Curriencies Companies", href: "/contact" },
+  { text: "Contact", href: "/contact" },
+  { text: "Contact", href: "/contact" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);
@@ -41,7 +41,7 @@ const Navbar = () => {
           ))}
         </div>
         <Link href={"/"}>
-          <h1 className={`logo`}>""</h1>
+          <h1 className={`logo`}>LOGO</h1>
         </Link>
       </nav>
     </header>

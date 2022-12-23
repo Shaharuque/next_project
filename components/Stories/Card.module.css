@@ -2,7 +2,7 @@
     margin: 102px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 0 16px;
+    gap: 16px;
 }
 
 .card {
@@ -27,22 +27,47 @@
     margin: 0 50px;
     display: flex;
     justify-content: center;
+    font-weight: 500;
+}
 
+.card_body {
+    padding: 10px;
 }
 
 .container {
-    padding: 2px 16px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.button {
-    background-color: red;
-    /* Green */
+.button1 {
+    background-color: #01AEAB;
+    border-radius: 7px;
     border: none;
     color: white;
-    padding: 5px 5px;
+    padding: 14px 85px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.button2 {
+    background-color: #F1F2F4;
+    border-radius: 7px;
+    border: 1px solid #01AEAB;
+    color: #01AEAB;
+    padding: 14px 85px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 12px;
 }

@@ -1,81 +1,26 @@
 import Link from "next/link";
 import styles from "./Card.module.css";
 import { BsMoonStarsFill } from "react-icons/bs";
+import { AiFillStar } from "react-icons/ai";
+import StoryCard from "./StoryCard";
+import { useState } from "react";
 
 const Stories = () => {
+  const [numbers, setNumbers] = useState([
+    "first",
+    "second",
+    "third",
+    "first",
+    "second",
+    "third",
+    "second",
+    "third",
+  ]);
   return (
     <div className={styles.cardDiv}>
-      {/* first card */}
-      <div className={styles.card}>
-        <div className={styles.imageStyle}>
-          <img
-            src="https://cdn.dribbble.com/users/2556278/screenshots/7409304/loveclip_still_2x.gif?compress=1&resize=400x300"
-            alt="Avatar"
-            style={{
-              width: "100%",
-              borderRadius: "5px",
-            }}
-          />
-        </div>
-        <div className={styles.container}>
-          <h4>
-            <b>Test</b>
-          </h4>
-          <p>Shahrukhamin27@gmail.com</p>
-        </div>
-      </div>
-      {/* second card */}
-      <div className={styles.card}>
-        <div className={styles.imageStyle}>
-          <img
-            src="https://cdn.dribbble.com/users/2556278/screenshots/7409304/loveclip_still_2x.gif?compress=1&resize=400x300"
-            alt="Avatar"
-            style={{ width: "100%", borderRadius: "5px" }}
-          />
-        </div>
-        <div className={styles.container}>
-          <h4>
-            <b>Test</b>
-          </h4>
-          <p>Shahrukhamin27@gmail.com</p>
-        </div>
-      </div>
-      {/* third card */}
-      <div className={styles.card}>
-        <div className={styles.imageStyle}>
-          <img
-            src="https://cdn.dribbble.com/users/2556278/screenshots/7409304/loveclip_still_2x.gif?compress=1&resize=400x300"
-            alt="Avatar"
-            style={{ width: "100%", borderRadius: "5px" }}
-          />
-        </div>
-        <div className={styles.container}>
-          <h4>
-            <b>Test</b>
-          </h4>
-          <p>Shahrukhamin27@gmail.com</p>
-        </div>
-      </div>
-      {/* fourth card */}
-      <div className={styles.card}>
-        <div className={styles.imageStyle}>
-          <img
-            src="https://cdn.dribbble.com/users/2556278/screenshots/7409304/loveclip_still_2x.gif?compress=1&resize=400x300"
-            alt="Avatar"
-            style={{ width: "100%", borderRadius: "5px" }}
-          />
-        </div>
-        <div className={styles.card_title}>
-          <p>Islamic Account</p>
-          <BsMoonStarsFill style={{ color: "teal", marginLeft: "2px" }} />
-        </div>
-        <div className={styles.container}>
-          <h4>
-            <b>Test</b>
-          </h4>
-          <p>Shahrukhamin27@gmail.com</p>
-        </div>
-      </div>
+      {numbers?.map((each, index) => (
+        <StoryCard each={each} key={index}></StoryCard>
+      ))}
     </div>
   );
 };
