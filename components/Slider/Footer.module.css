@@ -1,0 +1,9 @@
+.slick-slider .slick-prev {
+    left: 25px !important;
+    z-index: 100 !important;
+    background-color: aliceblue !important;
+}
+
+.slick_slide{
+    padding: 0 10px !important;
+}

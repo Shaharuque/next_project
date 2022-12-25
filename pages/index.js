@@ -4,6 +4,14 @@ import Script from "next/script";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Navbar from "../components/navbar/Navbar";
+import SearchBar from "../components/searchbar/SearchBar";
+import Banner from "../components/Banner/Banner";
+import Stories from "../components/Stories/Stories";
+import News from "../components/News/News";
+import AllArticles from "../components/Articles/AllArticles";
+import TradingFAQ from "../components/FAQ/TradingFAQ";
+import SliderImage from "../components/Slider/Slider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +26,14 @@ export default function Home() {
         {/* other script.js can be run here */}
       </Head>
       <Script></Script>
+      <Navbar></Navbar>
+      <SearchBar></SearchBar>
+      <SliderImage></SliderImage>
+      <Banner></Banner>
+      <Stories></Stories>
+      <News></News>
+      <AllArticles></AllArticles>
+      <TradingFAQ></TradingFAQ>
       {/* <nav className={styles.nav_style}>
         <ul>
           <Link href="/">
