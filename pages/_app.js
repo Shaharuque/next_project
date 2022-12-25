@@ -7,6 +7,10 @@ import News from "../components/News/News";
 import SearchBar from "../components/searchbar/SearchBar";
 import Stories from "../components/Stories/Stories";
 import "../styles/globals.css";
+// For slick slider css
+import "slick-carousel/slick/slick.css";
+
+
 
 export default function App({ Component, pageProps }) {
   return (

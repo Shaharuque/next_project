@@ -3,7 +3,11 @@
     z-index: 100 !important;
     background-color: aliceblue !important;
 }
-
+.slick-slide img {
+    display: block;
+    padding: 0 5px !important;
+}
 .slick_slide{
     padding: 0 10px !important;
 }
+

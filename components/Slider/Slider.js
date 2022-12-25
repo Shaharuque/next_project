@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Footer.module.css'
 import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -72,7 +72,7 @@ const SliderImage = () => {
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
+                            style={{ width: "100%", borderRadius: "5px" }}
                         />
                     </div>
 
@@ -80,7 +80,7 @@ const SliderImage = () => {
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
+                            style={{ width: "100%", borderRadius: "5px" }}
                         />
                     </div>
 
@@ -89,7 +89,7 @@ const SliderImage = () => {
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
+                            style={{ width: "100%", borderRadius: "5px" }}
                         />
                     </div>
 
@@ -98,7 +98,7 @@ const SliderImage = () => {
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
+                            style={{ width: "100%", borderRadius: "5px" }}
                         />
                     </div>
 
@@ -107,7 +107,7 @@ const SliderImage = () => {
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
+                            style={{ width: "100%", borderRadius: "5px"}}
                         />
                     </div>
 
@@ -116,7 +116,7 @@ const SliderImage = () => {
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
+                            style={{ width: "100%", borderRadius: "5px" }}
                         />
                     </div>
 
@@ -125,7 +125,7 @@ const SliderImage = () => {
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
+                            style={{ width: "100%", borderRadius: "5px"}}
                         />
                     </div>
 
@@ -133,7 +133,7 @@ const SliderImage = () => {
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
+                            style={{ width: "100%", borderRadius: "5px" }}
                         />
                     </div>
 

@@ -12,8 +12,9 @@ import News from "../components/News/News";
 import AllArticles from "../components/Articles/AllArticles";
 import TradingFAQ from "../components/FAQ/TradingFAQ";
 import SliderImage from "../components/Slider/Slider";
-
-const inter = Inter({ subsets: ["latin"] });
+import Sliders from "../components/Slider/TestSlider";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <Navbar></Navbar>
       <SearchBar></SearchBar>
       <SliderImage></SliderImage>
+      <Sliders></Sliders>
       <Banner></Banner>
       <Stories></Stories>
       <News></News>

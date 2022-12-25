@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./Articles.module.css";
 import {GoCommentDiscussion} from 'react-icons/go'
-import {CiClock2} from 'react-icons/ci'
+import {AiOutlineClockCircle} from 'react-icons/ai'
 
 const Article = () => {
     return (
@@ -23,7 +23,7 @@ const Article = () => {
           >
             24 July,2020
           </p>
-          <CiClock2 style={{fontSize:'20px',color:'#000000',marginLeft:'5px'}}/>
+          <AiOutlineClockCircle style={{fontSize:'20px',color:'#000000',marginLeft:'5px'}}/>
           </div>
           <p
             style={{
