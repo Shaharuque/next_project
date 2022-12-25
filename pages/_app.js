@@ -1,5 +1,6 @@
 import AllArticles from "../components/Articles/AllArticles";
 import Banner from "../components/Banner/Banner";
+import TradingFAQ from "../components/FAQ/TradingFAQ";
 import Navbar from "../components/navbar/Navbar";
 import News from "../components/News/News";
 import SearchBar from "../components/searchbar/SearchBar";
@@ -15,6 +16,7 @@ export default function App({ Component, pageProps }) {
       <Stories></Stories>
       <News></News>
       <AllArticles></AllArticles>
+      <TradingFAQ></TradingFAQ>
       <Component {...pageProps} />
     </>
   );
