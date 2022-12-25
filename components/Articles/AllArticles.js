@@ -9,7 +9,7 @@ const AllArticles = () => {
         <h2 style={{ textAlign: "end", marginBottom: "15px" }}>Articles</h2>
           <div className={styles.article_div}>
         {
-            cards?.map(card=><Article card={card}></Article>)
+            cards?.map((card,index)=><Article key={index} card={card}></Article>)
         }
           </div>
         </div>
