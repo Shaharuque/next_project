@@ -30,7 +30,7 @@ const SliderImage = () => {
     var settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        speed: 1000,
         slidesToShow: 3,
         slidesToScroll: 4,
         initialSlide: 0,
