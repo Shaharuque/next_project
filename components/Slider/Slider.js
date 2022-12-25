@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Footer.module.css'
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -29,7 +29,7 @@ function SamplePrevArrow(props) {
 const SliderImage = () => {
     var settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 4,
@@ -64,82 +64,81 @@ const SliderImage = () => {
         ]
     };
     return (
-        <div style={{margin:'102px'}} className={styles.slick_slide}>
-        <h3 style={{textAlign:"end",marginBottom:'10px'}}>Today's Stories</h3>
-            <Slider {...settings}>
-                <div>
+        <div style={{ backgroundColor: "#F1F2F4", padding: '5px 0', marginTop: '15px' }}>
+            <div style={{ margin: '102px', backgroundColor: "#F1F2F4" }} className={styles.slick_slide}>
+                <h3 style={{ textAlign: "end", marginBottom: '10px' }}>Today's Stories</h3>
+                <Slider {...settings}>
                     <div>
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px" }}
+                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
                         />
                     </div>
-                </div>
-                <div>
+
+                    <div style={{margin:'0 10px'}}>
+                        <img
+                            src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
+                            alt="Avatar"
+                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
+                        />
+                    </div>
+
+
                     <div>
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px" }}
+                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
                         />
                     </div>
-                </div>
-                <div>
+
+
                     <div>
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px" }}
+                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
                         />
                     </div>
-                </div>
-                <div>
+
+
                     <div>
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px" }}
+                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
                         />
                     </div>
-                </div>
-                <div>
+
+
                     <div>
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px" }}
+                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
                         />
                     </div>
-                </div>
-                <div>
+
+
                     <div>
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px" }}
+                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
                         />
                     </div>
-                </div>
-                <div>
+
                     <div>
                         <img
                             src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
                             alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px" }}
+                            style={{ width: "100%", borderRadius: "5px",padding:'0 10px' }}
                         />
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <img
-                            src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
-                            alt="Avatar"
-                            style={{ width: "100%", borderRadius: "5px" }}
-                        />
-                    </div>
-                </div>
-            </Slider>
+
+                </Slider>
+            </div>
         </div>
     );
 };
