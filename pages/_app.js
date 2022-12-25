@@ -1,3 +1,4 @@
+import AllArticles from "../components/Articles/AllArticles";
 import Banner from "../components/Banner/Banner";
 import Navbar from "../components/navbar/Navbar";
 import News from "../components/News/News";
@@ -13,6 +14,7 @@ export default function App({ Component, pageProps }) {
       <Banner></Banner>
       <Stories></Stories>
       <News></News>
+      <AllArticles></AllArticles>
       <Component {...pageProps} />
     </>
   );
