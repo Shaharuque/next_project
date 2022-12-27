@@ -15,10 +15,11 @@
 .first_part_body h2 {
     font-size: 24px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .first_part_body p {
-    font-size: 20px;
+    font-size: 18px;
     color: #717171;
     font-weight: 500
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "../Middle.module.css";
 import { BsCoin } from "react-icons/bs";
+import { FaBitcoin } from "react-icons/fa";
+import { AiFillPieChart } from "react-icons/ai";
 
 const SecondPart = () => {
   return (
@@ -26,12 +28,16 @@ const SecondPart = () => {
           }}
         >
           <div>
-            <p style={{ textAlign: "end" }}>0%</p>
+            <p style={{ textAlign: "end" }}>4.50%</p>
           </div>
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
             <p style={{ color: "#717171" }}>Crypto Currency</p>
             <BsCoin
-              style={{ margingRight: "5px", fontWeight: "bold" }}
+              style={{
+                marginLeft: "10px",
+                fontWeight: "bold",
+                fontSize: "20px",
+              }}
             ></BsCoin>
           </div>
         </div>
@@ -44,12 +50,16 @@ const SecondPart = () => {
           }}
         >
           <div>
-            <p style={{ textAlign: "end" }}>0%</p>
+            <p style={{ textAlign: "end" }}>7.0%</p>
           </div>
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
             <p style={{ color: "#717171" }}>Indications</p>
             <BsCoin
-              style={{ margingRight: "5px", fontWeight: "bold" }}
+              style={{
+                marginLeft: "10px",
+                fontWeight: "bold",
+                fontSize: "20px",
+              }}
             ></BsCoin>
           </div>
         </div>
@@ -66,9 +76,13 @@ const SecondPart = () => {
           </div>
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
             <p style={{ color: "#717171" }}>Coins</p>
-            <BsCoin
-              style={{ margingRight: "5px", fontWeight: "bold" }}
-            ></BsCoin>
+            <FaBitcoin
+              style={{
+                fontWeight: "bold",
+                marginLeft: "10px",
+                fontSize: "20px",
+              }}
+            ></FaBitcoin>
           </div>
         </div>
         {/* card-4 */}
@@ -84,45 +98,13 @@ const SecondPart = () => {
           </div>
           <div style={{ display: "flex", justifyContent: "flex-end" }}>
             <p style={{ color: "#717171" }}>Goods</p>
-            <BsCoin
-              style={{ margingRight: "5px", fontWeight: "bold" }}
-            ></BsCoin>
-          </div>
-        </div>
-        {/* card-5 */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(2,1fr)",
-            marginBottom: "20px",
-          }}
-        >
-          <div>
-            <p style={{ textAlign: "end" }}>2.23%</p>
-          </div>
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <p style={{ color: "#717171" }}>Crypto Currency</p>
-            <BsCoin
-              style={{ margingRight: "5px", fontWeight: "bold" }}
-            ></BsCoin>
-          </div>
-        </div>
-        {/* card-6 */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(2,1fr)",
-            marginBottom: "20px",
-          }}
-        >
-          <div>
-            <p style={{ textAlign: "end" }}>0%</p>
-          </div>
-          <div style={{ display: "flex", justifyContent: "flex-end" }}>
-            <p style={{ color: "#717171" }}>Crypto Currency</p>
-            <BsCoin
-              style={{ margingRight: "5px", fontWeight: "bold" }}
-            ></BsCoin>
+            <AiFillPieChart
+              style={{
+                marginLeft: "10px",
+                fontWeight: "bold",
+                fontSize: "20px",
+              }}
+            ></AiFillPieChart>
           </div>
         </div>
       </div>
