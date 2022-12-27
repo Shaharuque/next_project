@@ -7,8 +7,8 @@ const ChartCard = () => {
   return (
     <div>
       <div className={styles.chart_card}>
-        {totalCard?.map((each) => (
-          <SingleChartCard></SingleChartCard>
+        {totalCard?.map((each, index) => (
+          <SingleChartCard key={index}></SingleChartCard>
         ))}
       </div>
     </div>
