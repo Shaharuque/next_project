@@ -1,11 +1,15 @@
 .chart_card {
     width: 100%;
     padding: 8px;
-    background-color: #F1F2F4;
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    border: 2px solid red;
+}
+
+.card_main {
+    background-color: #F1F2F4;
+    padding: 5px;
 }
 
 .card_top_part {

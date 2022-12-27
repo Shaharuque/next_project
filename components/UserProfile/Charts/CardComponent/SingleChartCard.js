@@ -4,7 +4,7 @@ import styles from "./ChartCard.module.css";
 
 const SingleChartCard = () => {
   return (
-    <div>
+    <div className={styles.card_main}>
       <div className={styles.card_top_part}>
         <div className={styles.card_body}>
           <button className={styles.buy_button}>Buy</button>
