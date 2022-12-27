@@ -19,7 +19,39 @@
     /* grid-template-columns: repeat(3, 1fr); */
 }
 
+.divider {
+    width: 8px;
+    background-color: gray;
+    border: none;
+}
+
 .part_div {
     width: 100%;
-    border-right: 2px solid gray;
+}
+
+.part_div div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+.part_div div p {
+    color: #717171;
+}
+
+.part_div div span {
+    color: black;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    /* Style rules go here */
+    .body_div {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: repeat(3, 1fr); */
+    }
 }

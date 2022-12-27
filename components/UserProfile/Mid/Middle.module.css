@@ -1,0 +1,28 @@
+.main_div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 20px;
+    background-color: #F1F2F4;
+    padding: 60px 0;
+}
+
+.first_part_body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.first_part_body h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.first_part_body p {
+    font-size: 20px;
+    color: #717171;
+    font-weight: 500
+}
+
+.second_part_body {
+    padding: 15px;
+}

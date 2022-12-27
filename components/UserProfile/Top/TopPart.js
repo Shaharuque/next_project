@@ -13,7 +13,6 @@ const TopPart = () => {
       </div>
       <div className={styles.body_div}>
         <div className={styles.part_div}>
-          <h1 style={{ textAlign: "center" }}>Part1</h1>
           <div>
             <span>0</span>
             <p>Statistics</p>
@@ -31,11 +30,39 @@ const TopPart = () => {
             <p>Statistics</p>
           </div>
         </div>
+        <hr className={styles.divider}></hr>
         <div className={styles.part_div}>
-          <h1 style={{ textAlign: "center" }}>Part1</h1>
+          <div>
+            <span>0</span>
+            <p>Month rating</p>
+          </div>
+          <div>
+            <span>0</span>
+            <p>Reputation</p>
+          </div>
+          <div>
+            <span>0.00</span>
+            <p>Monthly Points</p>
+          </div>
         </div>
+        <hr className={styles.divider}></hr>
         <div className={styles.part_div}>
-          <h1 style={{ textAlign: "center" }}>Part1</h1>
+          <div>
+            <span>0</span>
+            <p style={{ textAlign: "end" }}>User Name</p>
+          </div>
+          <div>
+            <span>0</span>
+            <p>Life is Good</p>
+          </div>
+          <div>
+            <span>0.00</span>
+            <p>44 Followers</p>
+          </div>
+          <div>
+            <span>1.0</span>
+            <p>59 Recommendations</p>
+          </div>
         </div>
       </div>
     </div>
