@@ -1,0 +1,65 @@
+.chart_card {
+    width: 100%;
+    padding: 8px;
+    background-color: #F1F2F4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card_top_part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dummy_img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.card_body {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.buy_button {
+    border: 1px solid #46DA66;
+    color: #46DA66;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.market_price_btn {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.chart_card_below {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart_card_below h3 {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .chart_card_below h3 {
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .chart_card_below p {
+        font-size: 12px;
+    }
+}

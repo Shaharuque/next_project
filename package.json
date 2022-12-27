@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@next/font": "13.0.7",
+    "axios": "^1.2.1",
+    "chart.js": "^4.1.1",
     "eslint": "8.30.0",
     "eslint-config-next": "13.0.7",
     "next": "13.0.7",
+    "react-chartjs-2": "^5.1.0",
     "react-icons": "^4.7.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",

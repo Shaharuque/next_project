@@ -15,6 +15,7 @@ import SliderImage from "../components/Slider/Slider";
 import Sliders from "../components/Slider/TestSlider";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Dummy from "../components/Dummy/Dummy";
 
 export default function Home() {
   return (
@@ -30,7 +31,7 @@ export default function Home() {
       <Navbar></Navbar>
       <SearchBar></SearchBar>
       <SliderImage></SliderImage>
-      <Sliders></Sliders>
+      {/* <Sliders></Sliders> */}
       <Banner></Banner>
       <Stories></Stories>
       <News></News>

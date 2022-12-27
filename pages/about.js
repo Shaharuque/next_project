@@ -1,9 +1,10 @@
 import React from "react";
+import UserProfilePage from "../components/UserProfile/UserProfilePage";
 
 const about = () => {
   return (
     <div>
-      <h1>This is a About page</h1>
+      <UserProfilePage></UserProfilePage>
     </div>
   );
 };

@@ -1,17 +1,26 @@
-
 .article_div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
-.paragraph{
+.paragraph {
     display: flex;
     justify-content: flex-end;
 }
 
-.timeDiv{
+.timeDiv {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Style rules go here */
+    .article_div {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
 }
