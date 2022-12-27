@@ -5,12 +5,12 @@ import React, { useState } from "react";
 import NavItem from "./NavItem";
 
 const MENU_LIST = [
-  { text: "Articles", href: "/" },
-  { text: "News", href: "/about" },
-  { text: "Trending Companies", href: "/contact" },
-  { text: "Crypto Curriencies Companies", href: "/contact" },
+  { text: "Home", href: "/" },
+  { text: "User Profile Page", href: "/about" },
+  { text: "News", href: "/" },
+  { text: "Trending Companies", href: "/" },
+  { text: "Crypto Curriencies Companies", href: "/" },
   { text: "Contact", href: "/contact" },
-  { text: "Home", href: "/contact" },
 ];
 const Navbar = () => {
   const [navActive, setNavActive] = useState(null);

@@ -23,19 +23,19 @@ const SingleChartCard = () => {
       </div>
       <div className={styles.chart_card_below}>
         <div>
-          <h3>Stop loss</h3>
+          <h4>Stop loss</h4>
           <p style={{ textAlign: "end", fontWeight: "bold" }}>1.1001</p>
         </div>
         <div>
-          <h3>Take Profit 3</h3>
+          <h4>Take Profit 3</h4>
           <p style={{ textAlign: "end", fontWeight: "bold" }}>1.1001</p>
         </div>
         <div>
-          <h3>Take Profit 2</h3>
+          <h4>Take Profit 2</h4>
           <p style={{ textAlign: "end", fontWeight: "bold" }}>1.1001</p>
         </div>
         <div>
-          <h3>Take Profit 1</h3>
+          <h4>Take Profit 1</h4>
           <p style={{ textAlign: "end", fontWeight: "bold" }}>1.1001</p>
         </div>
       </div>

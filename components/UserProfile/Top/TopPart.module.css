@@ -1,0 +1,25 @@
+.main_div {
+    padding: 8px;
+}
+
+.image_div {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.profile_image {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.body_div {
+    margin-top: 20px;
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+}
+
+.part_div {
+    width: 100%;
+    border-right: 2px solid gray;
+}
