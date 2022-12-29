@@ -11,8 +11,6 @@ import AllArticles from "../components/Articles/AllArticles";
 import TradingFAQ from "../components/FAQ/TradingFAQ";
 import SliderImage from "../components/Slider/Slider";
 import Sliders from "../components/Slider/TestSlider";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Dummy from "../components/Dummy/Dummy";
 
 export default function Home() {
