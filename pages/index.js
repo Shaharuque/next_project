@@ -1,10 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Script from "next/script";
-import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import Navbar from "../components/navbar/Navbar";
 import SearchBar from "../components/searchbar/SearchBar";
 import Banner from "../components/Banner/Banner";
 import Stories from "../components/Stories/Stories";
@@ -28,7 +26,6 @@ export default function Home() {
         {/* other script.js can be run here */}
       </Head>
       <Script></Script>
-      <Navbar></Navbar>
       <SearchBar></SearchBar>
       <SliderImage></SliderImage>
       {/* <Sliders></Sliders> */}

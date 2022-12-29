@@ -24,7 +24,7 @@ const FirstPart = () => {
           }}
         >
           <h2>NZDUSD</h2>
-          <div style={{ display: "flex", alignItems: "space-between" }}>
+          <div style={{ display: "flex" }}>
             <p>159</p>
             <hr></hr>
             <p>5%</p>
