@@ -20,7 +20,7 @@ const LineChart = () => {
   return (
     // <div div className="lg:w-4/12 md:w-6/12">
     <div style={{ backgroundColor: "#FFFEFE", marginTop: "10px" }}>
-      <h1 className="graph-box bg-gradient-to-b from-teal-400 to-blue-900 py-1 mb-0 text-center text-white"></h1>
+      <h1></h1>
       {LineChartGraph.length > 0 ? (
         <Line
           className=" chart p-2"
