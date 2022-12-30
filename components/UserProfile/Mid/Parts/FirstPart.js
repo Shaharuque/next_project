@@ -3,19 +3,11 @@ import styles from "../Middle.module.css";
 
 const FirstPart = () => {
   return (
-    <div style={{ padding: "5px" }}>
-      <h2
-        style={{
-          textAlign: "end",
-          wordBreak: "break-all",
-          fontWeight: "500",
-          fontSize: "32px",
-          marginBottom: "30px",
-        }}
-      >
+    <div>
+      <h2 className="text-end text-lg font-bold mb-6 px-4">
         Market Distribution
       </h2>
-      <div className={styles.first_part_body}>
+      <div className="grid grid-cols-3 gap-5 px-4">
         <div
           style={{
             display: "flex",
