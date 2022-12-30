@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Footer.module.css";
+import styles from "./Slider.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";

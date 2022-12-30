@@ -1,0 +1,29 @@
+.slick-prev:before,
+.slick_next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-slider {
+    left: 25px !important;
+    z-index: 100 !important;
+}
+
+.imageStyle {
+    /* padding: 60px 0 !important; */
+    width: 95%;
+    height: 272px;
+    border-radius: 10px;
+}
+
+.slick-slide img {
+    display: block;
+    /* padding: 0 50px !important; */
+}
+
+/* Slick css */
