@@ -3,14 +3,14 @@ import Image from "next/image";
 import Script from "next/script";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
-import SearchBar from "../components/searchbar/SearchBar";
-import Banner from "../components/Banner/Banner";
-import Stories from "../components/Stories/Stories";
-import News from "../components/News/News";
-import AllArticles from "../components/Articles/AllArticles";
-import TradingFAQ from "../components/FAQ/TradingFAQ";
-import SliderImage from "../components/Slider/Slider";
-import Sliders from "../components/Slider/TestSlider";
+import SearchBar from "../components/Home/searchbar/SearchBar";
+import Banner from "../components/Home/Banner/Banner";
+import Stories from "../components/Home/Stories/Stories";
+import News from "../components/Home/News/News";
+import AllArticles from "../components/Home/Articles/AllArticles";
+import TradingFAQ from "../components/Home/FAQ/TradingFAQ";
+import SliderImage from "../components/Home/Slider/Slider";
+import Sliders from "../components/Home/Slider/TestSlider";
 import Dummy from "../components/Dummy/Dummy";
 
 export default function Home() {

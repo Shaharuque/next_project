@@ -6,7 +6,7 @@ import NavItem from "./NavItem";
 
 const MENU_LIST = [
   { text: "Home", href: "/" },
-  { text: "User Profile Page", href: "/about" },
+  { text: "User Profile Page", href: "/user_profile_page" },
   { text: "Broker List", href: "/broker_list" },
   { text: "Trending Companies", href: "/" },
   { text: "Crypto Curriencies Companies", href: "/" },
