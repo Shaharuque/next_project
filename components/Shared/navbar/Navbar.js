@@ -8,7 +8,7 @@ const MENU_LIST = [
   { text: "Home", href: "/" },
   { text: "User Profile Page", href: "/user_profile_page" },
   { text: "Broker List", href: "/broker_list" },
-  { text: "Trending Companies", href: "/" },
+  { text: "Trending Companies", href: "/broker_comparison" },
   { text: "Crypto Curriencies Companies", href: "/" },
   { text: "Contact", href: "/contact" },
 ];
