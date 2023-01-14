@@ -1,11 +1,6 @@
-.chart_div {
-    width: 100%;
-    background-color: #F1F2F4;
-}
-
 .chart_card {
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     background-color: #F1F2F4;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

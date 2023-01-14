@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styles from "./chart.module.css";
+import ChartBottom from "./ChartBottom/ChartBottom";
 import LineChart from "./HomeLineChart/LineChart";
 
 const SingleChartCard = () => {
+  const [row, setRows] = useState([1, 2, 3, 4, 5, 6, 7]);
   return (
     <div className={styles.card_main}>
       <div>
@@ -13,34 +15,16 @@ const SingleChartCard = () => {
       <div>
         <LineChart></LineChart>
       </div>
-      <div className={styles.chart_card_below}>
-        <div>
-          <h4>Stop loss</h4>
-          <p style={{ textAlign: "end", fontWeight: "bold" }}>1.1001</p>
+      <div className="bg-slate-200 mt-8 rounded p-4">
+        <div className="flex justify-between text-[12px]">
+          <p>Change</p>
+          <p>Asking Price</p>
+          <p>Change</p>
         </div>
-        <div>
-          <h4>Take Profit 3</h4>
-          <p style={{ textAlign: "end", fontWeight: "bold" }}>1.1001</p>
-        </div>
-        <div>
-          <h4>Take Profit 2</h4>
-          <p style={{ textAlign: "end", fontWeight: "bold" }}>1.1001</p>
-        </div>
-        <div>
-          <h4>Take Profit 1</h4>
-          <p style={{ textAlign: "end", fontWeight: "bold" }}>1.1001</p>
-        </div>
-      </div>
-      <div className={styles.market_price_btn}>
-        <button
-          style={{
-            padding: "10px 90px",
-            fontWeight: "700",
-            borderRadius: "5px",
-          }}
-        >
-          <span>1,230: </span>Market Price
-        </button>
+        {/* showing table row */}
+        {row?.map((e, index) => (
+          <ChartBottom key={index}></ChartBottom>
+        ))}
       </div>
     </div>
   );

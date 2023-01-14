@@ -23,15 +23,15 @@ const LineChart = () => {
       <h1></h1>
       {LineChartGraph.length > 0 ? (
         <Line
-          className=" chart p-2"
           data={{
             labels: [100, 200, 300, 400, 500, 600, 700, 800],
             datasets: [
               {
                 label: "Billed",
                 data: [3328, 1000, 1940, 700, 6000, 6050, 9000, 10000],
-                backgroundColor: "#9C4083",
-                barThickness: 25,
+                backgroundColor: "#4C4089",
+                barThickness: 10,
+                borderWidth: 1,
               },
             ],
           }}
