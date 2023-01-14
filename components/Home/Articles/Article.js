@@ -1,11 +1,12 @@
 import React from "react";
+import Link from "next/link";
 import styles from "./Articles.module.css";
 import { GoCommentDiscussion } from "react-icons/go";
 import { AiOutlineClockCircle } from "react-icons/ai";
 
 const Article = () => {
   return (
-    <div className={styles.card}>
+    <Link href={`/articles/1`} className={styles.card}>
       <div className={styles.imageStyle}>
         <img
           src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
@@ -53,7 +54,7 @@ const Article = () => {
           />
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

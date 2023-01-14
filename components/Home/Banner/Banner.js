@@ -11,7 +11,7 @@ const Banner = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
           accusantium.
         </p>
-        <input type="button" value="Learn More" />
+        <input className="font-sans" type="button" value="Learn More" />
         <input type="button" className={styles.btn} value="Broker Survey" />
       </div>
     </div>

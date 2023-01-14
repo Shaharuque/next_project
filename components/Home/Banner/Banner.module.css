@@ -34,11 +34,12 @@
     margin-top: 5px;
     font-size: 18px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 18px;
 }
 
 .btn {
     position: absolute;
     bottom: 5%;
     right: 22px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
