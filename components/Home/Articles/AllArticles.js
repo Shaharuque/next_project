@@ -27,7 +27,7 @@ const AllArticles = () => {
       </h2>
       <div
         className="text-end mb-2"
-        dangerouslySetInnerHTML={{ __html: "<p>Nice Mama</p>" }}
+        dangerouslySetInnerHTML={{ __html: data?.success[1]?.description }}
       ></div>
       <div className={styles.article_div}>
         {cards?.map((card, index) => (

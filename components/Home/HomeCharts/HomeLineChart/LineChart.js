@@ -25,7 +25,7 @@ const LineChart = () => {
         <Line
           className=" chart p-2"
           data={{
-            labels: LineChartGraph.map((x) => x.name.slice(1, 8)),
+            labels: [100, 200, 300, 400, 500, 600, 700, 800],
             datasets: [
               {
                 label: "Billed",
