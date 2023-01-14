@@ -17,8 +17,8 @@ const AllArticles = () => {
   //     });
   // }, []);
 
-  if (isLoading) return <p className="text-center">Loading...</p>;
-  if (!data) return <p>No profile data</p>;
+  // if (isLoading) return <p className="text-center">Loading...</p>;
+  // if (!data) return <p>No profile data</p>;
   console.log(data);
   return (
     <div style={{ margin: "102px" }}>
