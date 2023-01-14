@@ -1,0 +1,85 @@
+.chart_div {
+    width: 100%;
+    background-color: #F1F2F4;
+}
+
+.chart_card {
+    width: 100%;
+    padding: 40px;
+    background-color: #F1F2F4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card_main {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.card_top_part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dummy_img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.card_body {
+    font-size: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.buy_button {
+    border: 1px solid #01AEAB;
+    color: white;
+    background-color: #01AEAB;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.market_price_btn {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.chart_card_below {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart_card_below h4 {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 480px) {
+    .chart_card {
+        width: 100%;
+        padding: 15px;
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .chart_card_below h4 {
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 500;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .chart_card_below p {
+        font-size: 12px;
+    }
+}

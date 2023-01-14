@@ -12,6 +12,7 @@ import TradingFAQ from "../components/Home/FAQ/TradingFAQ";
 import SliderImage from "../components/Home/Slider/Slider";
 import Sliders from "../components/Home/Slider/TestSlider";
 import Dummy from "../components/Dummy/Dummy";
+import MainChart from "../components/Home/HomeCharts/MainChart";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <SliderImage></SliderImage>
       {/* <Sliders></Sliders> */}
       <Banner></Banner>
+      <MainChart></MainChart>
       <Stories></Stories>
       <News></News>
       <AllArticles></AllArticles>
