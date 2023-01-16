@@ -7,18 +7,18 @@ const AllArticles = () => {
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   fetch("http://67.205.165.138/api/article/list/")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setData(data);
-  //       setLoading(false);
-  //     });
-  // }, []);
+  useEffect(() => {
+    setLoading(true);
+    fetch("https://flagedu.com/api/article/list/")
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data);
+        setLoading(false);
+      });
+  }, []);
 
-  // if (isLoading) return <p className="text-center">Loading...</p>;
-  // if (!data) return <p>No profile data</p>;
+  if (isLoading) return <p className="text-center">Loading...</p>;
+  if (!data) return <p>No profile data</p>;
   console.log(data);
   return (
     <div style={{ margin: "102px" }}>
