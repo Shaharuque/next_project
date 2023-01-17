@@ -15,6 +15,12 @@ const AllArticles = () => {
       });
   }, []);
 
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => res.json())
+      .then((data) => console.log("fake data", data));
+  }, []);
+
   if (isLoading) return <p className="text-center">Loading...</p>;
   if (!data) return <p>No profile data</p>;
   console.log(data);
