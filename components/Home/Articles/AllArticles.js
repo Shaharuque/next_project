@@ -8,12 +8,10 @@ const AllArticles = () => {
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
     fetch("https://flagedu.com/api/article/list/")
       .then((res) => res.json())
       .then((data) => {
-        setData(data);
-        setLoading(false);
+        console.log(data);
       });
   }, []);
 
