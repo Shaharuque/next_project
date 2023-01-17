@@ -4,7 +4,7 @@ import styles from "./Articles.module.css";
 import { GoCommentDiscussion } from "react-icons/go";
 import { AiOutlineClockCircle } from "react-icons/ai";
 
-const Article = () => {
+const Article = ({ card }) => {
   return (
     <Link href={`/articles/1`} className={styles.card}>
       <div className={styles.imageStyle}>
@@ -36,7 +36,7 @@ const Article = () => {
             marginBottom: "7px",
           }}
         >
-          Lorem ipsum dolor sit amet.
+          {card?.name}
         </p>
         <div className={styles.paragraph}>
           <p

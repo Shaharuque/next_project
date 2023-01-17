@@ -26,7 +26,7 @@ const AllArticles = () => {
       "https://hotel-booking-app-server-production-15de.up.railway.app/api/hotels"
     )
       .then((res) => res.json())
-      .then((data) => console.log("fake data from my server", data));
+      .then((result) => setData(result));
   }, []);
 
   useEffect(() => {
@@ -53,7 +53,7 @@ const AllArticles = () => {
         dangerouslySetInnerHTML={{ __html: data?.success[1]?.description }}
       ></div> */}
       <div className={styles.article_div}>
-        {cards?.map((card, index) => (
+        {data?.map((card, index) => (
           <Article key={index} card={card}></Article>
         ))}
       </div>
