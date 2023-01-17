@@ -22,6 +22,14 @@ const AllArticles = () => {
   }, []);
 
   useEffect(() => {
+    fetch(
+      "https://hotel-booking-app-server-production-15de.up.railway.app/api/hotels"
+    )
+      .then((res) => res.json())
+      .then((data) => console.log("fake data from my server", data));
+  }, []);
+
+  useEffect(() => {
     fetch(`https://test-prod.therapypms.com/api/v1/admin/ac/staff/info/${31}`, {
       method: "GET",
       headers: {
