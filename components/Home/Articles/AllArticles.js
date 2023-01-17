@@ -8,7 +8,7 @@ const AllArticles = () => {
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch("https://flagedu.com/api/article/list/")
+    fetch("https://www.flagedu.com/api/article/list/")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
