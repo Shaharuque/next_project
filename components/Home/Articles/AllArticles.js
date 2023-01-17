@@ -9,7 +9,7 @@ const AllArticles = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://www.flagedu.com/api/article/list/")
+    fetch("https://flagedu.com/api/article/list/")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
