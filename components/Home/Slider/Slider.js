@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Slider.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import SingleSlider from "./singleSlider/SingleSlider";
 // import "slick-carousel/slick/slick-theme.css";
 
 function SampleNextArrow(props) {
@@ -27,12 +28,18 @@ function SamplePrevArrow(props) {
 }
 
 const SliderImage = () => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    fetch("https://www.flagedu.com/api/story/data/")
+      .then((res) => res.json())
+      .then((d) => setData(d?.success));
+  }, []);
   var settings = {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 5,
-    slidesToScroll: 6,
+    slidesToShow: 4,
+    slidesToScroll: 2,
     initialSlide: 0,
     nextArrow: <SampleNextArrow style={"black"} />,
     prevArrow: <SamplePrevArrow />,
@@ -69,71 +76,13 @@ const SliderImage = () => {
         <h3 style={{ textAlign: "end", marginBottom: "10px" }}>
           Today's Stories
         </h3>
-        <Slider {...settings}>
-          <div>
-            <img
-              className={styles.imageStyle}
-              src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
-              alt="Avatar"
-            />
-          </div>
-
-          <div style={{ margin: "0 10px" }}>
-            <img
-              className={styles.imageStyle}
-              src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
-              alt="Avatar"
-            />
-          </div>
-
-          <div>
-            <img
-              className={styles.imageStyle}
-              src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
-              alt="Avatar"
-            />
-          </div>
-
-          <div>
-            <img
-              className={styles.imageStyle}
-              src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
-              alt="Avatar"
-            />
-          </div>
-
-          <div>
-            <img
-              className={styles.imageStyle}
-              src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
-              alt="Avatar"
-            />
-          </div>
-
-          <div>
-            <img
-              className={styles.imageStyle}
-              src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
-              alt="Avatar"
-            />
-          </div>
-
-          <div>
-            <img
-              className={styles.imageStyle}
-              src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
-              alt="Avatar"
-            />
-          </div>
-
-          <div>
-            <img
-              className={styles.imageStyle}
-              src="https://media.istockphoto.com/id/1370822454/photo/apocalyptic-city-war-zone.jpg?b=1&s=170667a&w=0&k=20&c=Mqr9Pz6FvZbT4sSNhWdXkWTOfYIwE2fKr623oWm0sIk="
-              alt="Avatar"
-            />
-          </div>
-        </Slider>
+        <div>
+          <Slider {...settings}>
+            {data?.splice(0, 2)?.map((index, story) => (
+              <SingleSlider key={index} story={story}></SingleSlider>
+            ))}
+          </Slider>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./News.module.css";
+import SingleNews from "./SingleNews/SingleNews";
 
 const News = () => {
+  const [news, setNews] = useState([]);
+  //news api call
+  useEffect(() => {
+    fetch("https://flagedu.com/api/news/list/")
+      .then((res) => res.json())
+      .then((result) => setNews(result?.success));
+  }, []);
   return (
     <div style={{ margin: "102px" }}>
       <h2 style={{ textAlign: "end", marginBottom: "15px" }}>News</h2>
@@ -51,173 +59,9 @@ const News = () => {
 
         {/* Right side cards */}
         <div className={styles.news_div_right}>
-          <div className={styles.card}>
-            <div className={styles.imageStyle}>
-              <img
-                src="https://cdn.dribbble.com/users/2556278/screenshots/7409304/loveclip_still_2x.gif?compress=1&resize=400x300"
-                alt="Avatar"
-                style={{ width: "100%", borderRadius: "5px" }}
-              />
-            </div>
-            <div style={{ marginTop: "10px" }}>
-              <p
-                style={{
-                  color: "gray",
-                  fontSize: "12px",
-                  textAlign: "end",
-                  marginBottom: "7px",
-                }}
-              >
-                24 July,2020
-              </p>
-              <p
-                style={{
-                  fontSize: "14px",
-                  textAlign: "end",
-                  fontWeight: "bold",
-                  marginBottom: "7px",
-                }}
-              >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <p
-                style={{
-                  fontSize: "14px",
-                  textAlign: "end",
-                  fontWeight: "bold",
-                  marginBottom: "7px",
-                }}
-              >
-                Comments
-              </p>
-            </div>
-          </div>
-          {/* 2nd */}
-          <div className={styles.card}>
-            <div className={styles.imageStyle}>
-              <img
-                src="https://cdn.dribbble.com/users/2556278/screenshots/7409304/loveclip_still_2x.gif?compress=1&resize=400x300"
-                alt="Avatar"
-                style={{ width: "100%", borderRadius: "5px" }}
-              />
-            </div>
-            <div style={{ marginTop: "10px" }}>
-              <p
-                style={{
-                  color: "gray",
-                  fontSize: "12px",
-                  textAlign: "end",
-                  marginBottom: "7px",
-                }}
-              >
-                24 July,2020
-              </p>
-              <p
-                style={{
-                  fontSize: "14px",
-                  textAlign: "end",
-                  fontWeight: "bold",
-                  marginBottom: "7px",
-                }}
-              >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <p
-                style={{
-                  fontSize: "14px",
-                  textAlign: "end",
-                  fontWeight: "bold",
-                  marginBottom: "7px",
-                }}
-              >
-                Comments
-              </p>
-            </div>
-          </div>
-          {/* 3rd */}
-          <div className={styles.card}>
-            <div className={styles.imageStyle}>
-              <img
-                src="https://cdn.dribbble.com/users/2556278/screenshots/7409304/loveclip_still_2x.gif?compress=1&resize=400x300"
-                alt="Avatar"
-                style={{ width: "100%", borderRadius: "5px" }}
-              />
-            </div>
-            <div style={{ marginTop: "10px" }}>
-              <p
-                style={{
-                  color: "gray",
-                  fontSize: "12px",
-                  textAlign: "end",
-                  marginBottom: "7px",
-                }}
-              >
-                24 July,2020
-              </p>
-              <p
-                style={{
-                  fontSize: "14px",
-                  textAlign: "end",
-                  fontWeight: "bold",
-                  marginBottom: "7px",
-                }}
-              >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <p
-                style={{
-                  fontSize: "14px",
-                  textAlign: "end",
-                  fontWeight: "bold",
-                  marginBottom: "7px",
-                }}
-              >
-                Comments
-              </p>
-            </div>
-          </div>
-          {/* 4th */}
-          <div className={styles.card}>
-            <div className={styles.imageStyle}>
-              <img
-                src="https://cdn.dribbble.com/users/2556278/screenshots/7409304/loveclip_still_2x.gif?compress=1&resize=400x300"
-                alt="Avatar"
-                style={{ width: "100%", borderRadius: "5px" }}
-              />
-            </div>
-            <div style={{ marginTop: "10px" }}>
-              <p
-                style={{
-                  color: "gray",
-                  fontSize: "12px",
-                  textAlign: "end",
-                  marginBottom: "7px",
-                }}
-              >
-                24 July,2020
-              </p>
-              <p
-                style={{
-                  fontSize: "14px",
-                  textAlign: "end",
-                  fontWeight: "bold",
-                  marginBottom: "7px",
-                }}
-              >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <p
-                style={{
-                  fontSize: "14px",
-                  textAlign: "end",
-                  fontWeight: "bold",
-                  marginBottom: "7px",
-                }}
-              >
-                Comments
-              </p>
-            </div>
-          </div>
+          {news?.map((each, index) => (
+            <SingleNews key={index} each={each}></SingleNews>
+          ))}
         </div>
       </div>
     </div>
