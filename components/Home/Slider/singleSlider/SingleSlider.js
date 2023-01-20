@@ -2,16 +2,17 @@ import React from "react";
 import styles from "../Slider.module.css";
 import Image from "next/image";
 
-const SingleSlider = ({ story }) => {
-  const { image } = story || {};
-  console.log(image);
+const SingleSlider = ({ card }) => {
+  const { image } = card || {};
+  console.log("image url", image);
   return (
     <div>
       <img
-        src={`https://www.flagedu.com${image}`}
+        className="h-[200px] w-[90%] rounded"
+        src={`https://www.flagedu.com/${image}`}
         alt="Picture of the author"
-        width={500}
-        height={500}
+        // width={500}
+        // height={500}
       />
     </div>
   );

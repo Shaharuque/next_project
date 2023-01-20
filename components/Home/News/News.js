@@ -12,7 +12,7 @@ const News = () => {
   }, []);
   return (
     <div style={{ margin: "102px" }}>
-      <h2 style={{ textAlign: "end", marginBottom: "15px" }}>News</h2>
+      <h2 className="text-end mb-4 font-bold">News</h2>
       <div className={styles.news_div}>
         {/* Left side cards */}
         <div className={styles.card}>

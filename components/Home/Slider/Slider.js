@@ -28,12 +28,15 @@ function SamplePrevArrow(props) {
 }
 
 const SliderImage = () => {
-  const [data, setData] = useState([]);
+  const [story, setStory] = useState();
+  const [cards, setCards] = useState([]);
   useEffect(() => {
     fetch("https://www.flagedu.com/api/story/data/")
       .then((res) => res.json())
-      .then((d) => setData(d?.success));
+      .then((d) => setStory(d?.success));
   }, []);
+  console.log("stories", story);
+
   var settings = {
     dots: false,
     infinite: true,
@@ -73,13 +76,11 @@ const SliderImage = () => {
   return (
     <div>
       <div style={{ margin: "102px" }} className={styles.slick_slide}>
-        <h3 style={{ textAlign: "end", marginBottom: "10px" }}>
-          Today's Stories
-        </h3>
+        <h3 className="text-end mb-4 font-bold">Today's Stories</h3>
         <div>
           <Slider {...settings}>
-            {data?.splice(0, 2)?.map((index, story) => (
-              <SingleSlider key={index} story={story}></SingleSlider>
+            {story?.map((card, index) => (
+              <SingleSlider key={index} card={card}></SingleSlider>
             ))}
           </Slider>
         </div>

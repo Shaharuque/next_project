@@ -3,16 +3,18 @@ import Article from "./Article";
 import styles from "./Articles.module.css";
 
 const AllArticles = () => {
-  const [cards, setCards] = useState([1, 2, 3, 1]);
+  const [cards, setCards] = useState([]);
   const [data, setData] = useState(null);
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     fetch("https://www.flagedu.com/api/article/list/")
       .then((res) => res.json())
       .then((data) => {
         console.log("article list", data?.success);
         setCards(data?.success);
+        setLoading(false);
       });
   }, []);
   // useEffect(() => {
@@ -23,20 +25,20 @@ const AllArticles = () => {
   //     });
   // }, []);
 
-  useEffect(() => {
-    fetch(
-      "https://hotel-booking-app-server-production-15de.up.railway.app/api/hotels"
-    )
-      .then((res) => res.json())
-      .then((result) => setData(result));
-  }, []);
+  // useEffect(() => {
+  //   fetch(
+  //     "https://hotel-booking-app-server-production-15de.up.railway.app/api/hotels"
+  //   )
+  //     .then((res) => res.json())
+  //     .then((result) => setData(result));
+  // }, []);
 
   if (isLoading) return <p className="text-center">Loading...</p>;
-  if (!data) return <p>No profile data</p>;
-  console.log(data);
+  if (!cards) return <p>No profile data</p>;
+
   return (
     <div style={{ margin: "102px" }}>
-      <h2 style={{ textAlign: "end", marginBottom: "15px" }}>Articles</h2>
+      <h2 className="text-end mb-4 font-bold">Articles</h2>
       {/* <div
         className="text-end mb-2"
         dangerouslySetInnerHTML={{ __html: data?.success[1]?.description }}
