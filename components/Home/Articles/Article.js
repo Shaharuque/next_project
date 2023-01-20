@@ -12,7 +12,7 @@ const Article = ({ card }) => {
         <img
           src={`https://www.flagedu.com/${thumbnail_image}`}
           alt="Avatar"
-          style={{ width: "100%", height: "180px", borderRadius: "5px" }}
+          style={{ width: "100%", height: "300px", borderRadius: "5px" }}
         />
       </div>
       <div style={{ marginTop: "10px" }}>

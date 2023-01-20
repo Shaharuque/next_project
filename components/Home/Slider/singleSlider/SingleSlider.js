@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SingleSlider = ({ card }) => {
   const { image } = card || {};
-  console.log("image url", image);
+  // console.log("image url", image);
   return (
     <div>
       <img

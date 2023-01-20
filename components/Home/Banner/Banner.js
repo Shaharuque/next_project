@@ -17,6 +17,7 @@ const Banner = () => {
       .then((res) => res.json())
       .then((result) => setHomeData(result));
   }, []);
+  console.log("from banner", homeData);
 
   return (
     <div style={divImage} className={styles.wrapper}>
