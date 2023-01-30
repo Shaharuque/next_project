@@ -5,7 +5,7 @@ import styles from "./Middle.module.css";
 
 const Middle = () => {
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-6 lg:divide-x-[2px] ">
+    <div className="bg-[#F1F2F4] grid lg:grid-cols-2 grid-cols-1 lg:gap-0 gap-6 lg:divide-x-[2px] px-8 py-6">
       <FirstPart></FirstPart>
       <SecondPart></SecondPart>
     </div>

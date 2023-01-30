@@ -6,10 +6,11 @@ const News = () => {
   const [news, setNews] = useState([]);
   //news api call
   useEffect(() => {
-    fetch("https://flagedu.com/api/news/list/")
+    fetch("http://backend.flagedu.com/api/news/list/")
       .then((res) => res.json())
       .then((result) => setNews(result?.success));
   }, []);
+  console.log("new list", news);
   return (
     <div style={{ margin: "102px" }}>
       <h2 className="text-end mb-4 font-bold">News</h2>

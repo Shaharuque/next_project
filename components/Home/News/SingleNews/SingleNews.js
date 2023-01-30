@@ -9,7 +9,7 @@ const SingleNews = ({ each }) => {
       <Link href={`/news/${id}`} className={styles.card}>
         <div className={styles.imageStyle}>
           <img
-            src={`https://www.flagedu.com/${thumbnail_image}`}
+            src={`http://backend.flagedu.com/${thumbnail_image}`}
             alt="Avatar"
             style={{ width: "100%", height: "200px", borderRadius: "5px" }}
           />

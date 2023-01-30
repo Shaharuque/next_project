@@ -9,7 +9,7 @@ const SingleSlider = ({ card }) => {
     <div>
       <img
         className="h-[200px] w-[90%] rounded"
-        src={`https://www.flagedu.com/${image}`}
+        src={`http://backend.flagedu.com/${image}`}
         alt="Picture of the author"
         // width={500}
         // height={500}

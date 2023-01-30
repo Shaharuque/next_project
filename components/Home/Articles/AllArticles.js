@@ -9,7 +9,7 @@ const AllArticles = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("https://www.flagedu.com/api/article/list/")
+    fetch("http://backend.flagedu.com/api/article/list/")
       .then((res) => res.json())
       .then((data) => {
         console.log("article list", data?.success);
@@ -18,7 +18,7 @@ const AllArticles = () => {
       });
   }, []);
   // useEffect(() => {
-  //   fetch("https://flagedu.com/api/news/list/")
+  //   fetch("http://backend.flagedu.com/api/news/list/")
   //     .then((res) => res.json())
   //     .then((data) => {
   //       console.log("news list", data);

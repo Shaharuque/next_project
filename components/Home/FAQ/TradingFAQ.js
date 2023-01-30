@@ -4,7 +4,7 @@ import styles from "./Trading.module.css";
 const TradingFAQ = () => {
   const [trendingData, setTrendingData] = useState();
   useEffect(() => {
-    fetch("https://www.flagedu.com/api/home/data/")
+    fetch("http://backend.flagedu.com/api/home/data/")
       .then((res) => res.json())
       .then((result) => setTrendingData(result?.success));
   }, []);
@@ -26,7 +26,7 @@ const TradingFAQ = () => {
       <div>
         <div className={styles.imageStyle}>
           <img
-            src={`https://www.flagedu.com/${trendingData?.home_section_one_image}`}
+            src={`http://backend.flagedu.com/${trendingData?.home_section_one_image}`}
             alt="Avatar"
             style={{ width: "100%", borderRadius: "5px" }}
           />

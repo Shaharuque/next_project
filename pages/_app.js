@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Footer from "../components/Shared/footer/Footer";
 import Navbar from "../components/Shared/navbar/Navbar";
 import "../styles/globals.css";
@@ -5,11 +6,26 @@ import "../styles/globals.css";
 // import "slick-carousel/slick/slick.css";
 
 export default function App({ Component, pageProps }) {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Check if the mode is already saved in local storage
+    const savedMode = localStorage.getItem("mode");
+    if (savedMode === "dark") {
+      setIsDarkMode(true);
+    }
+  }, []);
+
+  const handleToggleMode = () => {
+    setIsDarkMode(!isDarkMode);
+    localStorage.setItem("mode", isDarkMode ? "light" : "dark");
+  };
   return (
-    <>
+    <div className={`App ${isDarkMode ? "dark-mode" : "light-mode"}`}>
+      <button onClick={handleToggleMode}>Toggle Mode</button>
       <Navbar></Navbar>
       <Component {...pageProps} />
       <Footer></Footer>
-    </>
+    </div>
   );
 }

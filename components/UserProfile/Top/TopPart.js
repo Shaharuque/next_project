@@ -5,7 +5,7 @@ import { AiOutlineLineChart, AiFillPieChart } from "react-icons/ai";
 
 const TopPart = () => {
   return (
-    <div className="p-6">
+    <div className="px-8 mb-16">
       <div className={styles.image_div}>
         <img
           className={styles.profile_image}
@@ -62,7 +62,9 @@ const TopPart = () => {
           <p className="text-end mx-6 font-bold text-[20px]">User Name</p>
           <p className="text-end mx-6 text-[#717171]">Life is good</p>
           <p className="text-end mx-6 font-bold">6 Followers</p>
-          <p className="text-end mx-6 text-[#01AEAB]">59 Connections</p>
+          <p className="text-end mx-6 font-bold text-[#01AEAB]">
+            59 Connections
+          </p>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import AllData from "./Data/AllData";
 const BasicDataOfBroker = () => {
   return (
     <div>
-      <div className="flex justify-between mt-6">
+      <div className="flex justify-between mt-10">
         <div className="flex items-center">
           <IoIosArrowDown className="text-[25px] rounded-xl border bg-[#F1F2F4]" />
           <p className="font-bold ml-2">Basic Data of Broker</p>
