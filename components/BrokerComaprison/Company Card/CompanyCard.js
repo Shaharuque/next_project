@@ -8,7 +8,7 @@ const CompanyCard = ({ cardInfo }) => {
       <div className="flex justify-center">
         <img
           className="w-30 h-20 rounded-md"
-          src={`http://backend.flagedu.com/${company_image}`}
+          src={`https://backend.flagedu.com/${company_image}`}
           alt="company card"
         />
       </div>

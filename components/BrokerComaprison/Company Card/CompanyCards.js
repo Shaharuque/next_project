@@ -44,7 +44,10 @@ const CompanyCards = () => {
           <div className="grid lg:grid-cols-4 gap-2">
             {cards?.map((cardInfo) => (
               <SwiperSlide key={cardInfo?.id}>
-                <CompanyCard cardInfo={cardInfo}></CompanyCard>
+                <CompanyCard
+                  key={cardInfo?.id}
+                  cardInfo={cardInfo}
+                ></CompanyCard>
               </SwiperSlide>
             ))}
           </div>

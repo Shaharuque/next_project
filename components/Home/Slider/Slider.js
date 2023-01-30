@@ -35,7 +35,7 @@ const SliderImage = () => {
       .then((res) => res.json())
       .then((d) => setStory(d?.success));
   }, []);
-  // console.log("stories", story);
+  console.log("stories", story);
 
   var settings = {
     dots: false,
