@@ -42,12 +42,9 @@ const CompanyCards = () => {
           modules={[Pagination, Navigation]}
         >
           <div className="grid lg:grid-cols-4 gap-2">
-            {cards?.map((cardInfo, index) => (
-              <SwiperSlide>
-                <CompanyCard
-                  key={cardInfo?.id}
-                  cardInfo={cardInfo}
-                ></CompanyCard>
+            {cards?.map((cardInfo) => (
+              <SwiperSlide key={cardInfo?.id}>
+                <CompanyCard cardInfo={cardInfo}></CompanyCard>
               </SwiperSlide>
             ))}
           </div>
