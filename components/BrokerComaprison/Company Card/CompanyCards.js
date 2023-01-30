@@ -41,7 +41,7 @@ const CompanyCards = () => {
           navigation={true}
           modules={[Pagination, Navigation]}
         >
-          <div className="grid lg:grid-cols-4 gap-2">
+          <div>
             {cards?.map((cardInfo) => (
               <SwiperSlide key={cardInfo?.id}>
                 <CompanyCard
