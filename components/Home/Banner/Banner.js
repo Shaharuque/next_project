@@ -8,12 +8,12 @@ const Banner = () => {
   var divImage = {
     backgroundImage:
       "url(" +
-      "http://backend.flagedu.com/" +
+      "https://backend.flagedu.com/" +
       homeData?.success?.header_background_image +
       ")",
   };
   useEffect(() => {
-    fetch(`http://backend.flagedu.com/api/home/data/`)
+    fetch(`https://backend.flagedu.com/api/home/data/`)
       .then((res) => res.json())
       .then((result) => setHomeData(result));
   }, []);

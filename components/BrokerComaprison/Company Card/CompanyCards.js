@@ -18,7 +18,7 @@ const CompanyCards = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://backend.flagedu.com/api/company/list")
+    fetch("https://backend.flagedu.com/api/company/list")
       .then((res) => res.json())
       .then((data) => {
         setLoading(false);

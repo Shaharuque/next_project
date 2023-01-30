@@ -22,7 +22,9 @@ export default function App({ Component, pageProps }) {
   };
   return (
     <div className={`App ${isDarkMode ? "dark-mode" : "light-mode"}`}>
-      <button onClick={handleToggleMode}>Toggle Mode</button>
+      <button onClick={handleToggleMode}>
+        <h1 className="text-center text-red-700">Toggle Mode</h1>
+      </button>
       <Navbar></Navbar>
       <Component {...pageProps} />
       <Footer></Footer>

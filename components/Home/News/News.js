@@ -6,7 +6,7 @@ const News = () => {
   const [news, setNews] = useState([]);
   //news api call
   useEffect(() => {
-    fetch("http://backend.flagedu.com/api/news/list/")
+    fetch("https://backend.flagedu.com/api/news/list/")
       .then((res) => res.json())
       .then((result) => setNews(result?.success));
   }, []);

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from "react";
+import logo from "../../../Assets/logoflag/flag s-01.png";
 // import Logo from "./Logo";
 import NavItem from "./NavItem";
 
@@ -41,7 +42,7 @@ const Navbar = () => {
           ))}
         </div>
         <Link href={"/"}>
-          <h1 className={`logo`}>LOGO</h1>
+          <h1 className={logo}>LOGO</h1>
         </Link>
       </nav>
     </header>

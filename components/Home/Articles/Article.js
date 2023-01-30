@@ -10,7 +10,7 @@ const Article = ({ card }) => {
     <Link href={`/articles/${id}`} className={styles.card}>
       <div className={styles.imageStyle}>
         <img
-          src={`http://backend.flagedu.com/${thumbnail_image}`}
+          src={`https://backend.flagedu.com/${thumbnail_image}`}
           alt="Avatar"
           style={{ width: "100%", height: "300px", borderRadius: "5px" }}
         />

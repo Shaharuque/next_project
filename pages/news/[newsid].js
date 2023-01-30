@@ -14,7 +14,7 @@ const SingleNews = () => {
 
   //single article api
   useEffect(() => {
-    fetch(`http://backend.flagedu.com/api/news/single/${newsid}`)
+    fetch(`https://backend.flagedu.com/api/news/single/${newsid}`)
       .then((res) => res.json())
       .then((result) => setData(result?.success));
   }, [newsid]);
@@ -24,7 +24,7 @@ const SingleNews = () => {
         {/* Top Section */}
         <div>
           <img
-            src={`http://backend.flagedu.com/${data?.thumbnail_image}`}
+            src={`https://backend.flagedu.com/${data?.thumbnail_image}`}
             alt="Picture of the author"
             className="w-full rounded"
             // blurDataURL="data:..." automatically provided

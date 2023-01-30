@@ -31,7 +31,7 @@ const SliderImage = () => {
   const [story, setStory] = useState();
   const [cards, setCards] = useState([]);
   useEffect(() => {
-    fetch("http://backend.flagedu.com/api/story/data/")
+    fetch("https://backend.flagedu.com/api/story/data/")
       .then((res) => res.json())
       .then((d) => setStory(d?.success));
   }, []);
