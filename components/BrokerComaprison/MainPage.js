@@ -7,6 +7,7 @@ import Fees from "./Fees/Fees";
 import StockAndEtf from "./StockAndETF/StockAndEtf";
 import ForexFees from "./ForexFees/ForexFees";
 import BondFees from "./BondFees/BondFees";
+import OptionFees from "./OptionFees/OptionFees";
 
 const MainPage = () => {
   return (
@@ -26,6 +27,7 @@ const MainPage = () => {
           <StockAndEtf></StockAndEtf>
           <ForexFees></ForexFees>
           <BondFees></BondFees>
+          <OptionFees></OptionFees>
         </div>
         <FilterBy></FilterBy>
       </div>
