@@ -4,6 +4,7 @@ import FilterBy from "./Filter/FilterBy";
 import { AiFillStar } from "react-icons/ai";
 import BasicDataOfBroker from "./BasicData/BasicDataOfBroker";
 import Fees from "./Fees/Fees";
+import StockAndEtf from "./StockAndETF/StockAndEtf";
 
 const MainPage = () => {
   return (
@@ -20,6 +21,7 @@ const MainPage = () => {
           </div>
           <BasicDataOfBroker />
           <Fees></Fees>
+          <StockAndEtf></StockAndEtf>
         </div>
         <FilterBy></FilterBy>
       </div>
