@@ -41,7 +41,7 @@ const CompanyCards = () => {
           spaceBetween={10}
           slidesPerGroup={4}
           loopFillGroupWithBlank={true}
-          navigation={true}
+          // navigation={true}
           modules={[Pagination, Navigation, Autoplay]}
         >
           <div>

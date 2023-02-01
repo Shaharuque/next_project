@@ -26,8 +26,8 @@ const AllData = ({ basicData, isLoading }) => {
         >
           <div className="grid lg:grid-cols-4 2xl:grid-cols-5 gap-2">
             {basicData?.map((info, index) => (
-              <SwiperSlide key={index}>
-                <SingleData info={info} key={index}></SingleData>
+              <SwiperSlide key={info?.id}>
+                <SingleData info={info} index={index}></SingleData>
               </SwiperSlide>
             ))}
           </div>

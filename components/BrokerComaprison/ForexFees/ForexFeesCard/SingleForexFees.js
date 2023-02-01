@@ -1,10 +1,14 @@
 import React from "react";
 import { BsExclamationCircleFill } from "react-icons/bs";
 
-const SingleForexFees = ({ info }) => {
+const SingleForexFees = ({ info, index }) => {
   const { name, amount } = info;
   return (
-    <div className="p-2 mt-0 sm:mt-5 border-r">
+    <div
+      className={`${
+        index === 0 ? "p-2 mt-0 sm:mt-5" : "p-2 mt-0 sm:mt-5 border-l"
+      }`}
+    >
       <div>
         <div className="flex justify-center items-center mt-3">
           <BsExclamationCircleFill className="mr-2 text-blue-500" />

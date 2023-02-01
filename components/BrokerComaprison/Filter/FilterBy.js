@@ -6,7 +6,7 @@ const FilterBy = () => {
     e.preventDefault();
   };
   return (
-    <div className="px-2 shadow-lg rounded-lg">
+    <div className="px-2 shadow-lg rounded-lg h-[700px]">
       <h2 className="text-end text-[18px]">Filter By</h2>
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col my-3">

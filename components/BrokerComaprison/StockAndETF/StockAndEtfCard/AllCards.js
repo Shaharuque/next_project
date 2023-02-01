@@ -25,9 +25,9 @@ const AllCards = ({ isLoading, basicData }) => {
           modules={[Pagination, Navigation]}
         >
           <div className="grid lg:grid-cols-4 2xl:grid-cols-5 gap-2">
-            {basicData?.map((info) => (
+            {basicData?.map((info, index) => (
               <SwiperSlide key={info?.id}>
-                <SingleCard info={info}></SingleCard>
+                <SingleCard info={info} index={index}></SingleCard>
               </SwiperSlide>
             ))}
           </div>

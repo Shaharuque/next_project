@@ -25,9 +25,9 @@ const AllForexFees = ({ isLoading, basicData }) => {
           modules={[Pagination, Navigation]}
         >
           <div className="grid lg:grid-cols-4 2xl:grid-cols-5 gap-2">
-            {basicData?.map((info) => (
+            {basicData?.map((info, index) => (
               <SwiperSlide key={info?.id}>
-                <SingleForexFees info={info}></SingleForexFees>
+                <SingleForexFees info={info} index={index}></SingleForexFees>
               </SwiperSlide>
             ))}
           </div>

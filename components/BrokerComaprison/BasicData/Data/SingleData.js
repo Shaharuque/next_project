@@ -3,10 +3,14 @@ import { AiFillStar } from "react-icons/ai";
 import { BsExclamationCircleFill } from "react-icons/bs";
 import { FcBearish } from "react-icons/fc";
 
-const SingleData = ({ info }) => {
+const SingleData = ({ info, index }) => {
   const { name, description, rating } = info;
   return (
-    <div className="p-2 mt-0 sm:mt-5 border-r">
+    <div
+      className={`${
+        index === 0 ? "p-2 mt-0 sm:mt-5" : "p-2 mt-0 sm:mt-5 border-l"
+      }`}
+    >
       <h1 className="text-center font-bold">Overall Score</h1>
       <div className="flex items-center justify-center mt-2">
         <AiFillStar className="text-[#DFB300]" />
