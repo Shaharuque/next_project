@@ -6,6 +6,7 @@ import BasicDataOfBroker from "./BasicData/BasicDataOfBroker";
 import Fees from "./Fees/Fees";
 import StockAndEtf from "./StockAndETF/StockAndEtf";
 import ForexFees from "./ForexFees/ForexFees";
+import BondFees from "./BondFees/BondFees";
 
 const MainPage = () => {
   return (
@@ -24,6 +25,7 @@ const MainPage = () => {
           <Fees></Fees>
           <StockAndEtf></StockAndEtf>
           <ForexFees></ForexFees>
+          <BondFees></BondFees>
         </div>
         <FilterBy></FilterBy>
       </div>
