@@ -1,7 +1,7 @@
 import React from "react";
 import { BsExclamationCircleFill } from "react-icons/bs";
 
-const SingleCard = ({ info }) => {
+const SingleForexFees = ({ info }) => {
   const { name, amount } = info;
   return (
     <div className="p-2 mt-0 sm:mt-5 border-r">
@@ -32,4 +32,4 @@ const SingleCard = ({ info }) => {
   );
 };
 
-export default SingleCard;
+export default SingleForexFees;

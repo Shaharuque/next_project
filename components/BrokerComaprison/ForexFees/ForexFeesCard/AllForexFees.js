@@ -7,9 +7,9 @@ import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import SingleCard from "./SingleCard";
+import SingleForexFees from "./SingleForexFees";
 
-const AllCards = ({ isLoading, basicData }) => {
+const AllForexFees = ({ isLoading, basicData }) => {
   return (
     <>
       {isLoading ? (
@@ -27,7 +27,7 @@ const AllCards = ({ isLoading, basicData }) => {
           <div className="grid lg:grid-cols-4 2xl:grid-cols-5 gap-2">
             {basicData?.map((info) => (
               <SwiperSlide key={info?.id}>
-                <SingleCard info={info}></SingleCard>
+                <SingleForexFees info={info}></SingleForexFees>
               </SwiperSlide>
             ))}
           </div>
@@ -37,4 +37,4 @@ const AllCards = ({ isLoading, basicData }) => {
   );
 };
 
-export default AllCards;
+export default AllForexFees;
