@@ -10,6 +10,7 @@ import BondFees from "./BondFees/BondFees";
 import OptionFees from "./OptionFees/OptionFees";
 import FutureFees from "./FutureFees/FutureFees";
 import NontradingFees from "./NonTradingfees/NontradingFees";
+import DepositAndWithdrawal from "./DepositAndWithdrawal/DepositAndWithdrawal";
 
 const MainPage = () => {
   return (
@@ -32,6 +33,7 @@ const MainPage = () => {
           <OptionFees></OptionFees>
           <FutureFees></FutureFees>
           <NontradingFees></NontradingFees>
+          <DepositAndWithdrawal></DepositAndWithdrawal>
         </div>
         <FilterBy></FilterBy>
       </div>
