@@ -5,6 +5,7 @@ import "../styles/globals.css";
 import { CiLight } from "react-icons/ci";
 import { BsFillBrightnessHighFill } from "react-icons/bs";
 import { TbMoonOff } from "react-icons/tb";
+import { BiSun } from "react-icons/bi";
 // For slick slider css
 // import "slick-carousel/slick/slick.css";
 
@@ -36,9 +37,9 @@ export default function App({ Component, pageProps }) {
       <div className="flex justify-between mb-8 shadow-md px-2 rounded">
         <button onClick={handleToggleMode}>
           {isDarkMode ? (
-            <CiLight className="text-[30px]" />
-          ) : (
             <TbMoonOff className="text-[30px]" />
+          ) : (
+            <BiSun className="text-[30px]" />
           )}
         </button>
         {/* <select value={value} onChange={handleChange}>
