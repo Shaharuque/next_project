@@ -3,6 +3,7 @@ import CompanyCards from "./Company Card/CompanyCards";
 import FilterBy from "./Filter/FilterBy";
 import { AiFillStar } from "react-icons/ai";
 import BasicDataOfBroker from "./BasicData/BasicDataOfBroker";
+import Fees from "./Fees/Fees";
 
 const MainPage = () => {
   return (
@@ -18,6 +19,7 @@ const MainPage = () => {
             </p>
           </div>
           <BasicDataOfBroker />
+          <Fees></Fees>
         </div>
         <FilterBy></FilterBy>
       </div>

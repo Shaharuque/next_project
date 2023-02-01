@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
+import AllFeesCard from "./FeesCard/AllFeesCard";
 import { IoIosArrowDown } from "react-icons/io";
 import { FcComboChart } from "react-icons/fc";
-import AllData from "./Data/AllData";
 
-const BasicDataOfBroker = () => {
+const Fees = () => {
   const [drop, setDrop] = useState(true);
   const [basicData, setBasicData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://backend.flagedu.com/api/company/basic/broker/list")
+    fetch("https://backend.flagedu.com/api/company/bond/fees/list/")
       .then((res) => res.json())
       .then((result) => {
         setIsLoading(false);
@@ -28,7 +28,7 @@ const BasicDataOfBroker = () => {
             onClick={handleDropDown}
             className="text-[25px] rounded-xl border bg-[#F1F2F4] cursor-pointer"
           />
-          <p className="font-bold ml-2">Basic Data of Broker</p>
+          <p className="font-bold ml-2">Fees</p>
         </div>
         <div className="flex items-center justify-center">
           <p className="mr-1 font-semibold">Sort</p>
@@ -37,11 +37,14 @@ const BasicDataOfBroker = () => {
       </div>
       <div>
         {drop && (
-          <AllData basicData={basicData} isLoading={isLoading}></AllData>
+          <AllFeesCard
+            basicData={basicData}
+            isLoading={isLoading}
+          ></AllFeesCard>
         )}
       </div>
     </div>
   );
 };
 
-export default BasicDataOfBroker;
+export default Fees;

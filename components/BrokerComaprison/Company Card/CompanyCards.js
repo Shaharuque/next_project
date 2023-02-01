@@ -3,14 +3,13 @@ import CompanyCard from "./CompanyCard";
 import TestSwiper from "./TestSwiper";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 const CompanyCards = () => {
   const [cards, setCards] = useState([1, 1, 1, 1, 1, 1, 1]);
@@ -32,14 +31,18 @@ const CompanyCards = () => {
         <h1 className="text-center text-teal-500 font-bold">Loading...</h1>
       ) : (
         <Swiper
+          loop={true}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
           className="text-center m-2"
           slidesPerView={4}
           spaceBetween={10}
           slidesPerGroup={4}
-          loop={true}
           loopFillGroupWithBlank={true}
           navigation={true}
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Navigation, Autoplay]}
         >
           <div>
             {cards?.map((cardInfo) => (

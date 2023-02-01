@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import SingleData from "./SingleData";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
@@ -8,8 +7,9 @@ import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import SingleFeesCard from "./SingleFeesCard";
 
-const AllData = ({ basicData, isLoading }) => {
+const AllFeesCard = ({ isLoading, basicData }) => {
   return (
     <>
       {isLoading ? (
@@ -27,19 +27,14 @@ const AllData = ({ basicData, isLoading }) => {
           <div className="grid lg:grid-cols-4 2xl:grid-cols-5 gap-2">
             {basicData?.map((info, index) => (
               <SwiperSlide key={index}>
-                <SingleData info={info} key={index}></SingleData>
+                <SingleFeesCard info={info} key={index}></SingleFeesCard>
               </SwiperSlide>
             ))}
           </div>
         </Swiper>
       )}
     </>
-    // <div className="grid lg:grid-cols-4 gap-3 lg:divide-x mt-6">
-    //   {basicData?.map((info, index) => (
-    //     <SingleData info={info} key={index}></SingleData>
-    //   ))}
-    // </div>
   );
 };
 
-export default AllData;
+export default AllFeesCard;
